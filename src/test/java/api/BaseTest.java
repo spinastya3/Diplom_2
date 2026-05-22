@@ -14,7 +14,7 @@ public class BaseTest {
     @After
     public void tearDown() {
         for (String accessToken : accessTokens) {
-            if (accessToken != null) { // Добавь эту строчку
+            if (accessToken != null) { 
                 userClient.delete(accessToken);
             }
         }
